@@ -1,0 +1,16 @@
+<center>
+    <h1>Welcome to Login page</h1>
+<form action="/login" method="POST">
+    <% if (messages.error) { %>
+        <strong> <%= messages.error %> </strong>
+        <br><br>
+    <% } %> 
+    
+    <label for="email">Email Address: </label>
+    <input type="text" id="email" name="email"><br><br>
+    <label for="pass">Password: </label>
+    <input type="password" id="password" name="password"><br><br>
+    <button type="submit">Sign In</button>
+    <p>Don't Have an account? <a href="/register">Sign Up</a></p>
+</form>
+</center>
